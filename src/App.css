@@ -1,0 +1,126 @@
+
+:root{
+  --red:#f54e4e;
+  --green:#4aec8c;
+
+}
+body{
+  background-image: url(/gradient.png);
+  color: #eee;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+main{
+
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+}
+button{
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  display: inline-block;
+  width: 100px;
+}
+button.settings{
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  line-height: 36px;
+}
+button.settings svg{
+  width: 36px;
+  float: left;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.setting{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #4aec8c;
+  padding: 0 40px;
+  z-index: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  height: 640px;
+}
+.setting__opt{
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+.setting__opt button{
+  width: 50px;
+  margin-left: 20px;
+}
+.setting__up{
+  padding-bottom:80px;
+  border-bottom: 1px solid #0ce230;
+  margin-bottom: 50px;
+}
+.fadeIn {
+  animation: fadeIn 0.5s ease;
+  animation-duration: 500ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    
+    width:0px ;
+  }
+  100% {
+    
+    width: 350px;
+  }
+}
+
+.fadeOut{
+  animation: fadeOut 0.5s ease;
+  animation-duration: 500ms;
+}
+@keyframes fadeOut {
+  0% {
+    
+    width: 350px;
+  }
+  100% {
+    
+    width: 0px;
+    
+  }
+}
+
+.skip{
+  position: relative;
+  top: -85px;
+  cursor: pointer;
+}
+h1{
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.footer{
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -90px;
+    align-items: center;
+    padding: 0 30px;
+}
+.about{
+ width: 350px;
+}
+.about p{
+  font-size: 13px;
+}
