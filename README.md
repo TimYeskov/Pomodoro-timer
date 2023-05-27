@@ -6,3 +6,5 @@
 3.Каждый четвертый перерыв предоставьте себе дополнительное время для отдыха и расслабления, чтобы ваш разум мог восстановиться и подготовиться к следующему сеансу работы
 
 View Live- https://pomodoro-timer-d1bw.onrender.com
+
+![image](https://github.com/TimYeskov/Pomodoro-timer/assets/123243238/a5ad3586-9235-4cb8-8dbe-b087cf877019)
