@@ -6,8 +6,8 @@ body {
   background-image: url(/gradient.png);
   color: #eee;
   font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
   position: relative;
 }
 
