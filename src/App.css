@@ -1,31 +1,29 @@
-
-:root{
-  --red:#f54e4e;
-  --green:#4aec8c;
-
+:root {
+  --red: #f54e4e;
+  --green: #4aec8c;
 }
-body{
+body {
   background-image: url(/gradient.png);
   color: #eee;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
   overflow-y: hidden;
-
+  position: relative;
 }
-main{
 
+main {
   max-width: 340px;
   margin: 0 auto;
   text-align: center;
 }
-button{
+button {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.8);
   border: 0;
   display: inline-block;
   width: 100px;
 }
-button.settings{
+button.settings {
   width: auto;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
@@ -33,16 +31,20 @@ button.settings{
   font-size: 1.4rem;
   line-height: 36px;
 }
-button.settings svg{
+button.settings svg {
   width: 36px;
   float: left;
 }
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
+  @media (max-width: 450px) {
+    padding: 0 10px;
+  }
 }
-.setting{
+
+.setting {
   position: absolute;
   right: 0;
   top: 0;
@@ -53,17 +55,17 @@ button.settings svg{
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   height: 640px;
 }
-.setting__opt{
+.setting__opt {
   display: flex;
   justify-content: space-between;
   width: 350px;
 }
-.setting__opt button{
+.setting__opt button {
   width: 50px;
   margin-left: 20px;
 }
-.setting__up{
-  padding-bottom:80px;
+.setting__up {
+  padding-bottom: 80px;
   border-bottom: 1px solid #0ce230;
   margin-bottom: 50px;
 }
@@ -74,53 +76,65 @@ button.settings svg{
 
 @keyframes fadeIn {
   0% {
-    
-    width:0px ;
+    width: 0px;
   }
   100% {
-    
     width: 350px;
   }
 }
 
-.fadeOut{
+.fadeOut {
   animation: fadeOut 0.5s ease;
   animation-duration: 500ms;
 }
 @keyframes fadeOut {
   0% {
-    
     width: 350px;
   }
   100% {
-    
     width: 0px;
-    
   }
 }
 
-.skip{
+.skip {
   position: relative;
-  top: -85px;
+  top: -80px;
   cursor: pointer;
+  @media (max-width: 900px) {
+    top: -70px;
+  }
+  @media (max-width: 700px) {
+    top: -55px;
+  }
+  @media (max-width: 450px) {
+    top: -15px;
+  }
 }
-h1{
+h1 {
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 1px;
+  @media (max-width: 900px) {
+    font-size: 25px;
+  }
+  @media (max-width: 700px) {
+    font-size: 20px;
+  }
+  @media (max-width: 450px) {
+    font-size: 14px;
+  }
 }
-.footer{
-
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: -90px;
-    align-items: center;
-    padding: 0 30px;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -90px;
+  align-items: center;
+  padding: 0 30px;
 }
-.about{
- width: 350px;
+.about {
+  width: 350px;
 }
-.about p{
+.about p {
   font-size: 13px;
 }

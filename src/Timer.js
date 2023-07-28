@@ -73,7 +73,7 @@ function Timer() {
       }
 
       tick();
-    }, 1000);
+    }, 10);
 
     return () => clearInterval(interval);
   }, [stepsRef.current]);
