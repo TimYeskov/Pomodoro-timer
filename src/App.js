@@ -21,7 +21,9 @@ function App() {
   return (
     <div style={{ position: "relative" }}>
       <div className="header">
-        <h1 style={{ position: "relative" }}>Pomidorro Timer</h1>
+        <h1 style={{ position: "relative" }} className="pomidorro-timer">
+          Pomidorro Timer
+        </h1>
         <h1
           onClick={handleClose}
           style={{
@@ -39,7 +41,10 @@ function App() {
         <Timer />
       </main>
       <div className="footer">
-        <div style={{ position: "absolute", zIndex: "-1" }}>
+        <div
+          style={{ position: "relative", zIndex: "-1", bottom: "30px" }}
+          className="h1"
+        >
           {`${pomodorro} of ${pomodorroPerDay}`} Pomodorro
           {pomodorro >= pomodorroPerDay && `  -Так держать!`}
         </div>
